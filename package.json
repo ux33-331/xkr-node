@@ -1,0 +1,36 @@
+{
+  "name": "xkr-Node",
+  "version": "0.0.1",
+  "description": "An electron wrapper for the Kryptokrona daemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "postinstall": "npm run rebuild",
+    "rebuild": "electron-rebuild -f -w node-pty",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kryptokrona/xkr-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kryptokrona/xkr-node/issues"
+  },
+  "homepage": "https://github.com/kryptokrona/xkr-node#readme",
+  "author": "ux33-331",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "download-file": "^0.1.5",
+    "node-pty": "^0.8.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "targz": "^1.0.1",
+    "unzipper": "^0.10.11",
+    "xterm": "^3.14.5"
+  },
+  "devDependencies": {
+    "electron": "^5.0.13",
+    "electron-rebuild": "^1.11.0",
+    "standard": "^13.0.1"
+  }
+}
